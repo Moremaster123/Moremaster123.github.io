@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Carlos González | Full Stack Python Developer</title>
+  <meta name="description" content="Portafolio de Juan Carlos González Herrera, Full Stack Python Developer en Puebla, México.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="contenedor nav__contenido">
+      <a href="#inicio" class="nav__logo">JC<span>.</span></a>
+      <nav>
+        <ul class="nav__lista">
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Inicio -->
+    <section id="inicio" class="hero">
+      <div class="contenedor hero__contenido">
+        <img class="hero__foto" src="https://github.com/Moremaster123.png?size=400" alt="Foto de Juan Carlos González">
+        <div>
+          <p class="hero__saludo">Hola, soy</p>
+          <h1 class="hero__nombre">Juan Carlos González Herrera</h1>
+          <h2 class="hero__puesto">Full Stack Python Developer</h2>
+          <p class="hero__texto">
+            Construyo APIs REST con Django REST Framework y las conecto con interfaces en React y TypeScript.
+            Vivo en Puebla, México, y estoy abierto a oportunidades como desarrollador Back End o Full Stack.
+          </p>
+          <div class="botones">
+            <a href="#proyectos" class="boton boton--principal">Ver proyectos</a>
+            <a href="#contacto" class="boton">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="seccion">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Sobre mí</h2>
+        <div class="sobre-mi">
+          <div class="sobre-mi__texto">
+            <p>
+              Estudié el programa <strong>Full Stack Python Developer</strong> en EBAC. Ahí aprendí a crear
+              backends con Python, Django y Django REST Framework, a diseñar bases de datos con SQL y a hacer
+              frontends con React, Redux y TypeScript. Tengo más de 20 repositorios en GitHub con mis prácticas
+              y proyectos.
+            </p>
+            <p>
+              Antes de programar trabajé más de 4 años coordinando equipos. En <strong>Volkswagen Group Academy</strong>
+              coordiné capacitaciones para más de 3,000 empleados al año y creé scripts en Python y Pandas para
+              automatizar reportes. En <strong>Teleperformance</strong> supervisé un equipo de 17 personas.
+            </p>
+            <p>
+              También soy <strong>Técnico en Mantenimiento de Aeronaves</strong>. En la aviación aprendí a trabajar con
+              orden, seguir procesos y cuidar cada detalle, y eso mismo aplico cuando escribo código.
+            </p>
+          </div>
+          <ul class="datos">
+            <li><span class="datos__numero">20+</span><span>repositorios en GitHub</span></li>
+            <li><span class="datos__numero">4+</span><span>años de experiencia laboral</span></li>
+            <li><span class="datos__numero">B2</span><span>nivel de inglés</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="seccion seccion--alterna">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Proyectos</h2>
+        <div class="proyectos">
+
+          <article class="proyecto proyecto--destacado">
+            <span class="proyecto__etiqueta">Proyecto principal</span>
+            <h3>E-commerce completo</h3>
+            <p>
+              Tienda en línea con backend en Django REST Framework (cuentas, productos, pedidos, direcciones y
+              facturación) y frontend en React con Redux Toolkit. Usa autenticación por token, rutas protegidas
+              y pruebas con Vitest.
+            </p>
+            <ul class="tecnologias">
+              <li>Django REST</li><li>React</li><li>Redux Toolkit</li><li>Vitest</li>
+            </ul>
+            <div class="proyecto__links">
+              <a href="https://github.com/Moremaster123/e-commerce-completo" target="_blank">Ver código</a>
+            </div>
+          </article>
+
+          <article class="proyecto">
+            <h3>Hound Express</h3>
+            <p>
+              Sistema de rastreo de paquetes. API con Django REST Framework que guarda el historial de cada envío
+              y un frontend en React y TypeScript.
+            </p>
+            <ul class="tecnologias">
+              <li>React</li><li>TypeScript</li><li>Django REST</li>
+            </ul>
+            <div class="proyecto__links">
+              <a href="https://moremaster123.github.io/Hound-Express-Modulo-30/" target="_blank">Ver demo</a>
+              <a href="https://github.com/Moremaster123/Hound-Express-Modulo-30" target="_blank">Frontend</a>
+              <a href="https://github.com/Moremaster123/Hound-Express-Backend" target="_blank">Backend</a>
+            </div>
+          </article>
+
+          <article class="proyecto">
+            <h3>Tienda de Llaveros</h3>
+            <p>
+              Tienda con catálogo, carrito y pago. Cada vez que subo cambios, GitHub Actions corre las pruebas y
+              publica la página automáticamente.
+            </p>
+            <ul class="tecnologias">
+              <li>React</li><li>Vite</li><li>GitHub Actions</li>
+            </ul>
+            <div class="proyecto__links">
+              <a href="https://moremaster123.github.io/Tienda-Llaveros/" target="_blank">Ver demo</a>
+              <a href="https://github.com/Moremaster123/Tienda-Llaveros" target="_blank">Ver código</a>
+            </div>
+          </article>
+
+          <article class="proyecto">
+            <h3>Autenticación y dashboard en Django</h3>
+            <p>
+              API con inicio de sesión por token y paginación, más un dashboard de ventas con gráficas hechas en
+              Chart.js usando datos del backend.
+            </p>
+            <ul class="tecnologias">
+              <li>Django</li><li>Django REST</li><li>Chart.js</li>
+            </ul>
+            <div class="proyecto__links">
+              <a href="https://github.com/Moremaster123/Autenticacion-en-Django-Rest-Framework" target="_blank">API</a>
+              <a href="https://github.com/Moremaster123/Grafica-de-Ventas" target="_blank">Dashboard</a>
+            </div>
+          </article>
+
+          <article class="proyecto">
+            <h3>Web Scraping con Python</h3>
+            <p>
+              Programa que recorre un catálogo con varias páginas, saca la información de cada producto y la
+              guarda en archivos CSV y JSON.
+            </p>
+            <ul class="tecnologias">
+              <li>Python</li><li>Requests</li><li>BeautifulSoup</li>
+            </ul>
+            <div class="proyecto__links">
+              <a href="https://github.com/Moremaster123/Web-Scraping" target="_blank">Ver código</a>
+            </div>
+          </article>
+
+          <article class="proyecto">
+            <h3>Biblioteca musical</h3>
+            <p>
+              Aplicación en React con Redux para manejar una biblioteca de canciones con store, reducers y actions.
+            </p>
+            <ul class="tecnologias">
+              <li>React</li><li>Redux</li><li>JavaScript</li>
+            </ul>
+            <div class="proyecto__links">
+              <a href="https://moremaster123.github.io/Tarea-Modulo-28/" target="_blank">Ver demo</a>
+              <a href="https://github.com/Moremaster123/Tarea-Modulo-28" target="_blank">Ver código</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="seccion">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Habilidades</h2>
+        <div class="habilidades">
+          <div class="habilidad">
+            <h3>Backend</h3>
+            <img src="https://skillicons.dev/icons?i=python,django,nodejs" alt="Python, Django, Node.js">
+            <p>Python, Django, Django REST Framework, APIs REST, Node.js</p>
+          </div>
+          <div class="habilidad">
+            <h3>Frontend</h3>
+            <img src="https://skillicons.dev/icons?i=react,redux,ts,js,html,css,sass" alt="React, Redux, TypeScript, JavaScript, HTML, CSS, Sass">
+            <p>React, Redux Toolkit, TypeScript, JavaScript, HTML, CSS, Sass, Bootstrap</p>
+          </div>
+          <div class="habilidad">
+            <h3>Bases de datos</h3>
+            <img src="https://skillicons.dev/icons?i=sqlite,docker" alt="SQLite, Docker">
+            <p>SQL, SQL Server, SQLite, Django ORM, diseño de bases de datos</p>
+          </div>
+          <div class="habilidad">
+            <h3>Herramientas</h3>
+            <img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,linux,vscode" alt="Git, GitHub, GitHub Actions, Docker, Linux, VS Code">
+            <p>Git, GitHub, GitHub Actions, Docker, Linux, Vitest, Jest</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="seccion seccion--alterna">
+      <div class="contenedor contacto">
+        <h2 class="seccion__titulo">Contacto</h2>
+        <p>¿Tienes una vacante o un proyecto? Escríbeme, con gusto platicamos.</p>
+        <div class="botones botones--centro">
+          <a href="https://www.linkedin.com/in/juan-carlos-desarrollador-web" class="boton boton--principal" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Moremaster123" class="boton" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Juan Carlos González Herrera · Puebla, México</p>
+  </footer>
+
+</body>
+</html>
